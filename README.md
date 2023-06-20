@@ -1,4 +1,4 @@
-# House-Rental-Reservation
+# House Rental Information System
 
 ![image](https://github.com/yosuaw/House-Rental-Reservation/assets/80568597/4f4c9575-0ba2-45c8-ae25-e7dd17c91155)
 
