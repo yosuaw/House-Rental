@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://peter.rental.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://peter.rental.com/">
+
+<xs:element name="CekListRumah" type="tns:CekListRumah"/>
+
+<xs:element name="CekListRumahResponse" type="tns:CekListRumahResponse"/>
+
+<xs:element name="CekLogin" type="tns:CekLogin"/>
+
+<xs:element name="CekLoginResponse" type="tns:CekLoginResponse"/>
+
+<xs:element name="CekTanggal" type="tns:CekTanggal"/>
+
+<xs:element name="CekTanggalResponse" type="tns:CekTanggalResponse"/>
+
+<xs:element name="Lacak" type="tns:Lacak"/>
+
+<xs:element name="LacakResponse" type="tns:LacakResponse"/>
+
+<xs:element name="Register" type="tns:Register"/>
+
+<xs:element name="RegisterResponse" type="tns:RegisterResponse"/>
+
+<xs:element name="Reservasi" type="tns:Reservasi"/>
+
+<xs:element name="ReservasiResponse" type="tns:ReservasiResponse"/>
+
+<xs:complexType name="Lacak">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="tanggal_masuk" type="xs:string" minOccurs="0"/>
+<xs:element name="tanggal_keluar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LacakResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Register">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="nama" type="xs:string" minOccurs="0"/>
+<xs:element name="nomor_telepon" type="xs:string" minOccurs="0"/>
+<xs:element name="alamat" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RegisterResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CekTanggal">
+<xs:sequence>
+<xs:element name="tanggal_masuk" type="xs:string" minOccurs="0"/>
+<xs:element name="tanggal_keluar" type="xs:string" minOccurs="0"/>
+<xs:element name="nama_rumah" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CekTanggalResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CekListRumah">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="CekListRumahResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Reservasi">
+<xs:sequence>
+<xs:element name="tanggal_masuk" type="xs:string" minOccurs="0"/>
+<xs:element name="tanggal_keluar" type="xs:string" minOccurs="0"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="nama_rumah" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ReservasiResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CekLogin">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CekLoginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
